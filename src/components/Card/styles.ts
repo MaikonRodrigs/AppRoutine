@@ -9,6 +9,8 @@ export const Container = styled.div<IProps>`
   /* background-color: blueviolet; */
   border-radius: 8px;
   background-color: ${({ backgroundColor }) => backgroundColor};
+  /* border: ${({ onClick }) =>
+    onClick ? `1px solid red` : "1px solid blue"}; */
 `;
 
 export const Hour = styled.div`

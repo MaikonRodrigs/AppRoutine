@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import * as C from './styles';
 
@@ -7,6 +7,7 @@ export interface IProps {
   title?: string;
   description?: string;
   backgroundColor?: string;
+  selectBorder?: boolean;
 }
 
 const Card: React.FC<IProps> = ({
@@ -15,8 +16,11 @@ const Card: React.FC<IProps> = ({
   description,
   backgroundColor,
 }: IProps) => {
+
   return (
-    <C.Container backgroundColor={backgroundColor}>
+    <C.Container 
+      backgroundColor={backgroundColor}
+    >
       <C.Hour>
         <p>{hour}</p>
       </C.Hour>

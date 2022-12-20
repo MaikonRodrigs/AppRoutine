@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '../components/Card';
 import * as C from "./styles";
 import { useScrollTo } from "react-use-window-scroll";
@@ -6,6 +6,11 @@ import { useScrollTo } from "react-use-window-scroll";
 const Pages = () => {
   const date = new Date().toLocaleTimeString();
   const scrollTo = useScrollTo();
+  const [border, setBorder] = useState<boolean>(false)
+  const handlerBorder = () => {
+    setBorder(!border);
+    console.log(border)
+  }
 
   return (
     <>
@@ -149,7 +154,7 @@ const Pages = () => {
           description='LER PELO MENOS 20 MIN'
         />
         <Card
-          hour="9:15"
+          hour="00:50"
           backgroundColor="var(--wake)"
           title='DORMIR 📵'
           description='SE DESLIGAR E IR DORMIR'
