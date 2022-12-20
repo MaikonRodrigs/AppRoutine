@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import Card from '../components/Card';
 import * as C from "./styles";
+import { useScrollTo } from "react-use-window-scroll";
 
 const Pages = () => {
   const date = new Date().toLocaleTimeString();
+  const scrollTo = useScrollTo();
 
   return (
     <>
@@ -152,7 +154,7 @@ const Pages = () => {
           title='DORMIR 📵'
           description='SE DESLIGAR E IR DORMIR'
         />
-        <C.Repeat>
+        <C.Repeat onClick={() => scrollTo({ top: 0, left: 0, behavior: "smooth" })}>
           <p>REPEAT 🔁</p>
         </C.Repeat>
       </C.Container>

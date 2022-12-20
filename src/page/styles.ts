@@ -22,6 +22,8 @@ export const Repeat = styled.div`
   border-radius: 8px;
   border: 2px dotted var(--black);
 
+  cursor: pointer;
+
   p {
     font-size: 32px;
   }
