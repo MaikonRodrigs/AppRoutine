@@ -23,7 +23,7 @@ export const Hour = styled.div`
   p {
     color: var(--white);
     font-weight: 400;
-    font-size: 33px;
+    font-size: 28px;
   }
 `;
 export const Informations = styled.div`
