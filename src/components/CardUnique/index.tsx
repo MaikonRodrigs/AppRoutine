@@ -2,19 +2,34 @@ import React from 'react';
 
 import * as C from './styles';
 
-const CardUnique: React.FC = () => {
+export interface IProps {
+  hour?: string;
+  title?: string;
+  description?: string;
+  color?: string;
+  selectBorder?: boolean;
+  next?: string;
+}
+
+const CardUnique: React.FC<IProps> = ({
+  hour,
+  title,
+  description,
+  color,
+  next,
+}: IProps) => {
   return (
-    <C.Container>
-      <C.Wrapper>
-        <h1>Wake Up!</h1>
-        <C.Circle>
-          <span>08:40</span>
+    <C.Container >
+      <C.Wrapper color={color}>
+        <h1>{title}</h1>
+        <C.Circle color={color}>
+          <span>{hour}</span>
         </C.Circle>
-        <C.Description>
-          <span>SE ALONGAR E BEBER 1 COPO DE AGUA</span>
+        <C.Description color={color}>
+          <span>{description}</span>
         </C.Description>
         <C.NextCircle>
-        <p>9:00 FAZER CAFÉ</p>
+        <p>{next}</p>
         </C.NextCircle>
       </C.Wrapper>
     </C.Container>

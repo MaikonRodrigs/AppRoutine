@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { IProps } from ".";
 
 export const Container = styled.div`
   display: flex;
@@ -7,7 +8,7 @@ export const Container = styled.div`
   height: 90vh;
 `;
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<IProps>`
   width: 360px;
   height: 620px;
   background-color: var(--white);
@@ -19,15 +20,17 @@ export const Wrapper = styled.div`
 
   h1 {
     font-size: 50px;
+    letter-spacing: -3px;
     margin-top: 50px;
-    color: var(--food);
+    text-transform: uppercase;
+    color: ${({ color }) => color};
   }
 `;
 
-export const Circle = styled.div`
+export const Circle = styled.div<IProps>`
   width: 200px;
   height: 200px;
-  background-color: var(--food);
+  background-color: ${({ color }) => color};
   border-radius: 50%;
 
   position: absolute;
@@ -42,13 +45,13 @@ export const Circle = styled.div`
   }
 `;
 
-export const Description = styled.div`
+export const Description = styled.div<IProps>`
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-top: 270px;
   span {
-    color: var(--food);
+    color: ${({ color }) => color};
     text-transform: uppercase;
   }
 
