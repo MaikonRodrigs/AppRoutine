@@ -2,13 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  justify-items: center;
-  gap: 10px;
-  padding-bottom: 120px;
-  white-space: nowrap;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  gap: 20px;
 `;
 
 export const Repeat = styled.div`

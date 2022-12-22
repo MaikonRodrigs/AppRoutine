@@ -24,12 +24,11 @@ export default createGlobalStyle`
     }
     
     html {
-        background: var(--white);
+        background: var(--black);
         color: var(--white);
     }
 
     :root {
-    max-width: 460px;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
