@@ -1,14 +1,17 @@
 import React from 'react';
-import CardUnique from '../components/CardUnique';
+import CardUnique from '../CardUnique';
+import Hours from '../Hours';
 import * as C from './styles';
-import Routines from '../assets/data/routines.js';
+import Routines from '../../assets/data/routines.js';
 
 const CirclePage: React.FC = () => {
-  const data = Routines.routine
+  const data = Routines.routine;
+  setInterval('Hours()', 1000);
+
   return (
     <>
       <C.Container>
-        <h1>22:00</h1>
+        {/* <span><Hours /></span> */}
         {data.map(function (d: any, idx: any) {
           return (
             <CardUnique key={d.id}

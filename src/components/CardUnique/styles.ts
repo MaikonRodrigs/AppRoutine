@@ -10,7 +10,7 @@ export const Container = styled.div<IProps>`
 
 export const FullCard = styled.div<IProps>`
   width: 360px;
-  height: 460px;
+  height: 560px;
   background-color: var(--white);
   border-radius: 12px;
   box-shadow: 8px 4px 18px 8px #00000029;

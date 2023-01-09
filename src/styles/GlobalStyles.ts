@@ -45,6 +45,12 @@ export default createGlobalStyle`
     --job: #8870ff;
     --recreation: #aab69b;
     --important: #ff0000;
+    /* --wake: #c5f7f0;
+    --food: #a9c2c9;
+    --go: #8e8ca3;
+    --job: #72577c;
+    --recreation: #562155;
+    --important: #ff0000; */
     
 
   }
