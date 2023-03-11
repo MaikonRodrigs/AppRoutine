@@ -24,8 +24,8 @@ export default createGlobalStyle`
     }
     
     html {
-        background: var(--black);
-        color: var(--white);
+        background: var(--white);
+        color: var(--go);
     }
 
     :root {

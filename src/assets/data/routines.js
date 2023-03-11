@@ -1,21 +1,6 @@
 const Routines = {
   routine: [
     {
-      id: "001",
-      hour: "8:40",
-      backgroundColor: "var(--wake)",
-      title: "ACORDAR 📵",
-      description: "se alongar e beber 1 copo de agua",
-    },
-    {
-      id: "002",
-      hour: "8:50",
-      backgroundColor: "var(--food)",
-      title: "FAZER CAFÉ",
-      description: "FAZER O CAFÉ PRETO E COLOCAR NA GARRAFA",
-    },
-    {
-      id: "003",
       hour: "8:40",
       backgroundColor: "var(--wake)",
       title: "ACORDAR 📵",
